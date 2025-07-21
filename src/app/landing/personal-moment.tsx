@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 export default function PersonalMoment() {
   return (
-    <section className="mt-40 font-manrope">
+    <section className="mt-40 font-manrope relative ">
       <h2 className="text-center text-[#404040] text-[28px]  font-bold leading-tight ">
         Prenez un moment rien que{" "}
         <span className="text-[#B0B0B0] ">pour vous.</span>
@@ -55,6 +55,14 @@ export default function PersonalMoment() {
           </Button>
         </div>
       </div>
+      <Image
+        className="absolute hidden lg:block -z-10"
+        loading="lazy"
+        src={"/first-vector.svg"}
+        alt="line"
+        width={400}
+        height={100}
+      />
     </section>
   );
 }

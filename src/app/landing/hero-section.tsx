@@ -5,10 +5,10 @@ import Button from "../components/Button";
 export default function HeroSection() {
   return (
     <section>
-      <h1 className="text-[#404040] font-manrope font-bold text-[38px] text-center">
+      <h1 className="text-[#404040] font-manrope font-bold text-[38px] text-center leading-tight">
         Prenez soin de votre esprit, quelques minutes par jour.
       </h1>
-      <p className="text-[16px] text-[#404040] font-manrope text-center mt-8">
+      <p className="text-[16px] text-[#404040] font-manrope text-center mt-6">
         Un outil simple pour réduire le stress, suivre vos émotions et retrouver
         le calme.
       </p>

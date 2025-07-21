@@ -26,6 +26,14 @@
   --font-gloria: "Gloria Hallelujah", cursive;
 }
 
+@layer utilities {
+  .shadow-inner-top {
+    box-shadow: inset 0px -1px 2px rgba(196, 196, 196, 0.25),
+      /* ombre en haut */ inset 0px 1px 2px rgba(196, 196, 196, 0.25),
+      /* lumière en bas */ 0px 0px 2px rgba(0, 0, 0, 0.25); /* ombre externe douce */
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

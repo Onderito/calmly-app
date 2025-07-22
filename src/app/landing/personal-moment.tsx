@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 export default function PersonalMoment() {
   return (
-    <section className="mt-40 font-manrope relative ">
+    <section className="mt-48 font-manrope relative ">
       <h2 className="text-center text-[#404040] text-[28px]  font-bold leading-tight ">
         Prenez un moment rien que{" "}
         <span className="text-[#B0B0B0] ">pour vous.</span>

@@ -18,7 +18,7 @@ export default function Button({
         "font-bold transition-colors duration-200",
         {
           // Primary style
-          "bg-[#86C0FA] font-manrope text-[16px]  px-0 text-white py-4 hover:bg-[#6bb2f7] rounded-lg ":
+          "bg-[#86C0FA] font-manrope text-[16px] px-0 text-white py-4 hover:bg-[#6bb2f7]  ":
             variant === "primary",
           // Secondary style
           "border font-manrope  border-[#404040] text-[16px] px-2 py-4 text-[#404040] bg-transparent rounded-lg  hover:bg-[#eaf6ff]":

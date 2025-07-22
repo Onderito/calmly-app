@@ -36,7 +36,7 @@ export default function PersonalMoment() {
             Ecrivez librement, sans jugement. Un journal simple pour vous
             libérer l’esprit, en quelques mots.
           </p>
-          <Button className="px-2 mt-8" variant="primary">
+          <Button className="px-2 mt-8 rounded-lg" variant="primary">
             Je commence maintenant
           </Button>
           <Button

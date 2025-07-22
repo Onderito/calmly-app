@@ -13,7 +13,9 @@ export default function HeroSection() {
         le calme.
       </p>
       <div className="flex flex-col gap-4 mt-10">
-        <Button variant="primary">Commencer gratuitement</Button>
+        <Button className="rounded-lg" variant="primary">
+          Commencer gratuitement
+        </Button>
         <Button variant="secondary">Comment ça marche ?</Button>
       </div>
       <div className="flex gap-4 justify-center mt-10 relative">

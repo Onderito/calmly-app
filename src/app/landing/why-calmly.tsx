@@ -24,7 +24,7 @@ const cards = [
 
 export default function WhyCalmly() {
   return (
-    <section>
+    <section className="relative">
       <h2 className="text-center text-[#404040] text-[28px] md:text-[56px] font-manrope-bold leading-tight">
         Un espace calme, pensé avec intention.
       </h2>
@@ -33,12 +33,23 @@ export default function WhyCalmly() {
         préserver ce que vous ressentez.
       </p>
 
-      {/* Cards container */}
+      {/* Vector qui déborde de toute la largeur de l'écran */}
+      <Image
+        className="hidden xl:block xl:absolute xl:left-1/2 xl:-translate-x-1/2 xl:top-34 xl:-z-10 xl:w-screen xl:max-w-none"
+        src={"/second-vector.svg"}
+        alt="line"
+        width={400}
+        height={100}
+      />
 
-      <div className="flex flex-col gap-6 mt-10">
+      {/* Cards container */}
+      <div className="flex flex-col xl:flex-row xl:justify-center xl:items-stretch gap-6 mt-10 xl:mt-12 relative xl:z-10">
         {cards.map((card, index) => (
-          <div key={index} className="shadow-sm p-4 rounded-3xl ">
-            <div className="flex justify-center bg-[#86C0FA]/10 h-40 md:h-60 rounded-2xl ring-3 ring-white shadow-md">
+          <div
+            key={index}
+            className="shadow-sm p-4 xl:p-6 rounded-3xl xl:w-[520px] bg-white"
+          >
+            <div className="flex justify-center bg-[#86C0FA]/10 h-40 md:h-60 rounded-2xl ring-3 ring-white shadow-md relative">
               <Image
                 className="md:w-[120px]"
                 src={card.img}
@@ -47,10 +58,10 @@ export default function WhyCalmly() {
                 height={100}
               />
             </div>
-            <h3 className="font-manrope-bold  mt-6 text-[20px] md:text-[26px] text-[#404040] ">
+            <h3 className="font-manrope-bold mt-6 xl:mt-8 text-[20px] md:text-[26px] text-[#404040]">
               {card.title}
             </h3>
-            <p className="font-manrope-regular mt-2 font-man text-[#404040] text-[14px] md:text-[18px]">
+            <p className="font-manrope-regular mt-2 font-man text-[#404040] text-[14px] md:text-[18px] xl:text-[]">
               {card.description}
             </p>
           </div>

@@ -9,7 +9,7 @@ export default function PersonalMoment() {
         Prenez un moment rien que{" "}
         <span className="text-[#B0B0B0] ">pour vous.</span>
       </h2>
-      <div className="content-container w-full flex flex-col xl:flex-row xl:items-center xl:gap-10 justify-center mt-8 xl:mt-12 ">
+      <div className="content-container w-full flex flex-col xl:flex-row xl:items-center xl:gap-20 justify-center mt-8 xl:mt-12 ">
         <div className="img-container relative xl:w-1/2 ">
           <Image
             className="rounded-2xl shadow-md shadow-[#86C0FA] md:w-full "
@@ -58,7 +58,7 @@ export default function PersonalMoment() {
         </div>
       </div>
       <Image
-        className="absolute hidden top-5 right-[-230px] xl:block -z-10"
+        className="absolute hidden top-5 right-[-300px] xl:block -z-10"
         loading="lazy"
         src={"/first-vector.svg"}
         alt="line"

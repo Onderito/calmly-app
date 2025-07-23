@@ -5,6 +5,17 @@ import Button from "../components/Button";
 export default function HeroSection() {
   return (
     <section>
+      <div className="absolute inset-0 -z-10 hidden xl:block">
+        <Image
+          className="rounded-b-[80px]"
+          src="/hero-bg.webp" // remplace par le bon chemin
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          priority
+        />
+      </div>
       <h1 className="text-[#404040] font-manrope font-bold text-[38px] md:text-[64px] xl:text-[80px] text-center leading-tight  md:leading-18 xl:leading-20">
         Prenez soin de votre esprit, quelques minutes par jour.
       </h1>

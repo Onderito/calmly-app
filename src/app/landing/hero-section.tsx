@@ -13,10 +13,10 @@ export default function HeroSection() {
         le calme.
       </p>
       <div className="flex flex-col gap-4 mt-10 xl:flex-row xl:justify-center">
-        <Button className="cursor-pointer rounded-lg xl:p-2" variant="primary">
+        <Button className=" rounded-lg xl:p-2" variant="primary">
           Commencer gratuitement
         </Button>
-        <Button className="cursor-pointer" variant="secondary">
+        <Button className="" variant="secondary">
           Comment ça marche ?
         </Button>
       </div>

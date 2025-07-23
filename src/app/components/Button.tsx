@@ -24,10 +24,10 @@ export default function Button({
           "border font-manrope  border-[#404040] text-[16px] px-2 py-4 text-[#404040] bg-transparent rounded-lg  hover:bg-[#eaf6ff]":
             variant === "secondary",
           // message style blur
-          "shadow-inner-top bg-white/40 font-gloria text-[12px] text-[#000000]/45 w-fit px-8 py-3 rounded-full":
+          "shadow-inner-top bg-white/40 font-gloria text-[12px] md:text-[14px] lg:[text-16px] text-[#000000]/45 w-fit px-8 py-3 rounded-full":
             variant === "noBlur",
           // message style blur
-          "shadow-inner-top border-1 font-gloria text-white/80 text-[12px] bg-white/10 backdrop-blur-xs w-fit px-8 py-3 rounded-full ":
+          "shadow-inner-top border-1 font-gloria text-white/80 text-[12px] md:text-[14px] lg:[text-16px] bg-white/10 backdrop-blur-xs w-fit px-8 py-3 rounded-full ":
             variant === "blur",
         },
         className

@@ -57,11 +57,11 @@ export default function Pricing() {
         aller plus loin.
       </p>
 
-      <div className="flex flex-col gap-6 mt-10">
+      <div className="flex flex-col xl:flex-row gap-6 mt-10 xl:mt-12">
         {pricing.map((price, index) => (
           <div
             key={index}
-            className={`shadow-custom rounded-3xl p-6 relative overflow-hidden ${
+            className={`shadow-custom rounded-3xl p-6 relative overflow-hidden xl:w-[520px] ${
               index === 1 ? "border-gradient-blue-white" : ""
             }`}
           >
@@ -81,10 +81,10 @@ export default function Pricing() {
                 <span className="text-[14px] md:text-[16px]">/mois</span>
               )}
             </h3>
-            <h4 className="font-manrope-bold text-[20px] md:text-[24px] text-[#404040] mt-4">
+            <h4 className="font-manrope-bold text-[20px] md:text-[24px] text-[#404040] mt-4 xl:mt-6">
               {price.title}
             </h4>
-            <p className="text-[#404040] text-[16px] md:text-[18px] font-manrope-regular mt-2">
+            <p className="text-[#404040] text-[16px] md:text-[18px] font-manrope-regular mt-2 ">
               {price.description}
             </p>
             <ul className="mt-8">
@@ -92,7 +92,7 @@ export default function Pricing() {
                 {price.features.map((feature, index) => (
                   <p
                     key={index}
-                    className="flex gap-2 text-[#404040] text-[16px] md:text-[18px] font-manrope-regular mt-2"
+                    className="flex gap-2 text-[#404040] text-[16px] md:text-[18px] font-manrope-regular mt-2 xl:mt-4 xl:w-screen"
                   >
                     <Image
                       className="md:w-[30px]"
@@ -107,7 +107,7 @@ export default function Pricing() {
               </li>
             </ul>
             <Button
-              className={`w-full mt-8 rounded-2xl ${
+              className={`w-full mt-8 xl:mt-10 rounded-2xl ${
                 index === 1 ? "shadow-inner-white" : ""
               } `}
               variant="primary"

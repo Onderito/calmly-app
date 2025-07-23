@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="w-full relative flex items-center px-6 py-4">
+        <header className="w-full relative flex items-center px-6 py-6">
           <div className="w-20 h-20 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-15 rounded-full bg-gradient-to-b from-white to-[#86C0FA] blur-xs "></div>
           <Link
             href="/"

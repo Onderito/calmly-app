@@ -9,14 +9,14 @@ export default function PersonalMoment() {
         Prenez un moment rien que{" "}
         <span className="text-[#B0B0B0] ">pour vous.</span>
       </h2>
-      <div className="content-container w-full flex flex-col justify-center mt-8 ">
-        <div className="img-container relative ">
+      <div className="content-container w-full flex flex-col xl:flex-row xl:items-center xl:gap-20 justify-center mt-8 xl:mt-12 ">
+        <div className="img-container relative xl:w-1/2 ">
           <Image
             className="rounded-2xl shadow-md shadow-[#86C0FA] md:w-full "
             src={"/happy-person.webp"}
             alt="happy"
             width={400}
-            height={100}
+            height={400}
           />
           <Button className="absolute top-[-10px] " variant="blur">
             &quot;Je prends une pause&quot;
@@ -30,11 +30,11 @@ export default function PersonalMoment() {
           </Button>
         </div>
 
-        <div className="mt-6 text-[#404040]">
-          <h3 className="font-manrope-bold text-[22px] md:text-[26px] ">
+        <div className="mt-6 text-[#404040] xl:w-1/2">
+          <h3 className="font-manrope-bold text-[22px] md:text-[26px] xl:text-[32px] ">
             Exprimez ce que vous ressentez.
           </h3>
-          <p className="font-regular text-[14px] md:text-[18px] mt-2 text-[#404040]">
+          <p className="font-regular text-[14px] md:text-[18px] xl:text-[20px] mt-2 text-[#404040]">
             Ecrivez librement, sans jugement. Un journal simple pour vous
             libérer l’esprit, en quelques mots.
           </p>
@@ -58,7 +58,7 @@ export default function PersonalMoment() {
         </div>
       </div>
       <Image
-        className="absolute hidden lg:block -z-10"
+        className="absolute hidden top-5 right-[-300px] xl:block -z-10"
         loading="lazy"
         src={"/first-vector.svg"}
         alt="line"

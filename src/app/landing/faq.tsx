@@ -42,21 +42,21 @@ export default function Faq() {
       <p className="text-center font-regular text-[14px] md:text-[18px] mt-4 text-[#404040]">
         On répond en toute transparence à ce que vous vous demandez sûrement.
       </p>
-      <div className="mt-10 flex flex-col gap-6">
+      <div className="flex flex-col gap-6 mt-10 xl:mt-12">
         {faq.map((f, index) => (
           <div
             onClick={() => toggle(index)}
-            className="shadow-custom rounded-3xl flex flex-col gap-4 p-4 cursor-pointer"
+            className="shadow-custom rounded-3xl flex flex-col gap-4 p-4 xl:p-8 cursor-pointer"
             key={index}
           >
-            <div className="flex gap-4 items-start ">
-              <p>{f.img}</p>
+            <div className="flex gap-4 items-baseline ">
+              <p className="xl:text-[20px]">{f.img}</p>
               <div className="flex flex-col gap-2">
-                <h3 className="font-manrope-bold text-[16px] md:text-[18px] text-[#404040]">
+                <h4 className="font-manrope-bold text-[16px] md:text-[18px] xl:text-[20px] text-[#404040]">
                   {f.question}
-                </h3>
+                </h4>
                 {open === index && (
-                  <h4 className="font-manrope-regular text-[14px] md:text-[16px] text-[#404040]">
+                  <h4 className="font-manrope-regular text-[14px] md:text-[16px] xl:text-[18px] text-[#404040]">
                     {f.answer}
                   </h4>
                 )}

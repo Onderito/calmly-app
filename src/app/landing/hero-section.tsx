@@ -34,7 +34,7 @@ export default function HeroSection() {
       <div className="flex justify-center items-end mt-10 relative">
         {/* Image gauche : avant */}
         <div className="z-0 relative">
-          <p className="font-gloria text-[12px] text-[#B9B9B9] text-center mb-2">
+          <p className="font-gloria text-[12px] xl:text-[18px] text-[#404040] text-center mb-2">
             avant
           </p>
           <Image
@@ -48,7 +48,7 @@ export default function HeroSection() {
 
         {/* Image droite : après, décalée vers le haut */}
         <div className="z-10 relative -mt-6">
-          <p className="font-gloria text-[12px] text-[#B9B9B9] text-center mb-2">
+          <p className="font-gloria text-[12px] xl:text-[18px] text-[#404040] text-center mb-2">
             après
           </p>
           <Image

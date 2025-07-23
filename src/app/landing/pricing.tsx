@@ -51,7 +51,7 @@ export default function Pricing() {
       <h2 className="text-center text-[#404040] text-[28px] font-bold leading-tight">
         Un accompagnement à votre rythme.{" "}
       </h2>
-      <p className="text-center font-regular text-[14px] mt-6 text-[#404040]">
+      <p className="text-center font-regular text-[14px] mt-4 text-[#404040]">
         Commencez gratuitement. Passez à Serein ou Profond si vous souhaitez
         aller plus loin.
       </p>

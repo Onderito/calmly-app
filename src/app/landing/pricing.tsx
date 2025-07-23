@@ -48,11 +48,12 @@ const pricing = [
 export default function Pricing() {
   return (
     <section>
-      <h2 className="text-center text-[#404040] text-[28px] font-bold leading-tight">
+      <h2 className="text-center text-[#404040] text-[28px] md:text-[56px] font-bold leading-tight">
         Un accompagnement à votre rythme.{" "}
       </h2>
-      <p className="text-center font-regular text-[14px] mt-4 text-[#404040]">
-        Commencez gratuitement. Passez à Serein ou Profond si vous souhaitez
+      <p className="text-center font-regular text-[14px] md:text-[18px] mt-4 text-[#404040]">
+        Commencez gratuitement. Passez à Serein ou Profond si vous souhaitez{" "}
+        <br className="hidden md:block" />
         aller plus loin.
       </p>
 
@@ -66,7 +67,7 @@ export default function Pricing() {
           >
             {index === 1 && (
               <>
-                <button className="absolute bg-[#86C0FA] text-white font-manrope-bold p-2 rounded-bl-2xl top-0 right-0">
+                <button className="absolute bg-[#86C0FA] text-white font-manrope-bold p-2 md:p-4 rounded-bl-2xl top-0 right-0 md:text-[16px]">
                   le plus populaire
                 </button>
 
@@ -74,14 +75,16 @@ export default function Pricing() {
                 <div className="w-20 h-20 absolute bg-gradient-to-b from-white to-[#86C0FA] rounded-full bottom-10 left-[-50px] blur-[15px] -z-10"></div>
               </>
             )}
-            <h3 className="text-[28px] text-[#86C0FA] font-manrope-bold  ">
+            <h3 className="text-[28px] md:text-[32px] text-[#86C0FA] font-manrope-bold  ">
               {price.price}
-              {index !== 0 && <span className="text-[14px]">/mois</span>}
+              {index !== 0 && (
+                <span className="text-[14px] md:text-[16px]">/mois</span>
+              )}
             </h3>
-            <h4 className="font-manrope-bold text-[20px] text-[#404040] mt-4">
+            <h4 className="font-manrope-bold text-[20px] md:text-[24px] text-[#404040] mt-4">
               {price.title}
             </h4>
-            <p className="text-[#404040] text-[16px] font-manrope-regular mt-2">
+            <p className="text-[#404040] text-[16px] md:text-[18px] font-manrope-regular mt-2">
               {price.description}
             </p>
             <ul className="mt-8">
@@ -89,9 +92,10 @@ export default function Pricing() {
                 {price.features.map((feature, index) => (
                   <p
                     key={index}
-                    className="flex gap-2 text-[#404040] text-[16px] font-manrope-regular mt-2"
+                    className="flex gap-2 text-[#404040] text-[16px] md:text-[18px] font-manrope-regular mt-2"
                   >
                     <Image
+                      className="md:w-[30px]"
                       src={price.img}
                       alt="checked-circle"
                       width={20}

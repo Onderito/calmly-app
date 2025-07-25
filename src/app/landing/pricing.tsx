@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Button from "../components/Button";
+import { easeInOut, motion, Variants } from "framer-motion";
 
 const pricing = [
   {
@@ -45,22 +48,61 @@ const pricing = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 80, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
 export default function Pricing() {
   return (
     <section>
-      <h2 className="text-center text-[#404040] text-[28px] md:text-[56px] font-bold leading-tight">
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: easeInOut }}
+        className="text-center text-[#404040] text-[28px] md:text-[56px] font-bold leading-tight"
+      >
         Un accompagnement à votre rythme.{" "}
-      </h2>
-      <p className="text-center font-regular text-[14px] md:text-[18px] mt-4 text-[#404040]">
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: easeInOut, delay: 0.3 }}
+        className="text-center font-regular text-[14px] md:text-[18px] mt-4 text-[#404040]"
+      >
         Commencez gratuitement. Passez à Serein ou Profond si vous souhaitez{" "}
         <br className="hidden md:block" />
         aller plus loin.
-      </p>
+      </motion.p>
 
-      <div className="flex flex-col xl:flex-row gap-6 mt-10 xl:mt-12">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+        className="flex flex-col xl:flex-row gap-6 mt-10 xl:mt-12"
+      >
         {pricing.map((price, index) => (
-          <div
+          <motion.div
             key={index}
+            variants={cardVariants}
             className={`shadow-custom rounded-3xl p-6 relative overflow-hidden xl:w-[520px] ${
               index === 1 ? "border-gradient-blue-white" : ""
             }`}
@@ -114,9 +156,9 @@ export default function Pricing() {
             >
               {price.button}
             </Button>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

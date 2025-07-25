@@ -25,7 +25,31 @@ export default function HeroSection() {
         transition={{ duration: 1.2, ease: easeInOut }}
         className="text-[#404040] font-manrope font-bold text-[38px] md:text-[64px] xl:text-[80px] text-center leading-tight  md:leading-18 xl:leading-20"
       >
-        Prenez soin de votre esprit, quelques minutes par jour.
+        Prenez soin de votre esprit, quelques minutes{" "}
+        <span className="relative">
+          {" "}
+          par jour.
+          <svg
+            className="absolute bottom-[-40px] right-5 hidden xl:block"
+            width="308"
+            height="100"
+            viewBox="0 0 308 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.path
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ duration: 1.5, ease: easeInOut, delay: 1.5 }}
+              d="M11 49.1575C94.0769 41.9939 229.365 42.3785 305.231 49.7771"
+              stroke="#86C0FA"
+              strokeWidth="4"
+              strokeMiterlimit="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 20 }}

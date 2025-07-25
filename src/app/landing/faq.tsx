@@ -76,9 +76,9 @@ export default function Faq() {
                   <AnimatePresence>
                     {open === index && (
                       <motion.h4
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
+                        initial={{ opacity: 0, height: -10 }}
+                        animate={{ opacity: 1, height: 30 }}
+                        exit={{ opacity: 0, height: -10 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="font-manrope-regular text-[14px] md:text-[16px] xl:text-[18px] text-[#404040]"
                       >

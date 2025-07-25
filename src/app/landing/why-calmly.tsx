@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { easeInOut, motion } from "framer-motion";
 
 const cards = [
@@ -97,7 +96,7 @@ export default function WhyCalmly() {
             <motion.h3
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: easeInOut, delay: 0.9 }}
+              transition={{ duration: 0.8, ease: easeInOut, delay: 0.8 }}
               className="font-manrope-bold mt-6 xl:mt-8 text-[20px] md:text-[26px] text-[#404040]"
             >
               {card.title}
@@ -105,7 +104,7 @@ export default function WhyCalmly() {
             <motion.p
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: easeInOut, delay: 1.1 }}
+              transition={{ duration: 0.8, ease: easeInOut, delay: 0.8 }}
               className="font-manrope-regular mt-2 font-man text-[#404040] text-[14px] md:text-[18px] xl:text-[]"
             >
               {card.description}

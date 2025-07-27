@@ -75,7 +75,7 @@ export default function HeroSection() {
           Commencer gratuitement
         </Button>
         <Button className="" variant="secondary">
-          Comment ça marche ?
+          Pourquoi Calmly ?
         </Button>
       </motion.div>
       <div className="flex justify-center items-end mt-10 relative">

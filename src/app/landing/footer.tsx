@@ -27,7 +27,14 @@ export default function Footer() {
           </Button>
           <div className="border-b border-white/50 w-full py-2"></div>
           <p lang=" font-manrope-regular text-[14px] md:text-[16px] ">
-            © 2025 Calmly — Built by UnderDev
+            © 2025 Calmly — Built by{" "}
+            <a
+              className=" underline"
+              target="_blank"
+              href="https://github.com/Onderito"
+            >
+              UnderDev
+            </a>
           </p>
         </div>
         <svg

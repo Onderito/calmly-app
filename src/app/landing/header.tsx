@@ -22,7 +22,7 @@ export default function Header() {
           href="/"
           className="text-2xl font-bold font-manrope text-[#404040]"
         >
-          calmly
+          Calmly
         </Link>
       </motion.div>
     </div>

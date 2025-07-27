@@ -68,22 +68,30 @@ export default function Faq() {
               key={index}
             >
               <div className="flex gap-4 items-baseline ">
-                <p className="xl:text-[20px]">{f.img}</p>
+                <motion.p
+                  animate={{ rotate: open === index ? 45 : 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="xl:text-[20px]"
+                >
+                  {f.img}
+                </motion.p>
                 <div className="flex flex-col gap-2">
                   <h4 className="font-manrope-bold text-[16px] md:text-[18px] xl:text-[20px] text-[#404040]">
                     {f.question}
                   </h4>
                   <AnimatePresence>
                     {open === index && (
-                      <motion.h4
-                        initial={{ opacity: 0, height: -10 }}
-                        animate={{ opacity: 1, height: 30 }}
-                        exit={{ opacity: 0, height: -10 }}
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="font-manrope-regular text-[14px] md:text-[16px] xl:text-[18px] text-[#404040]"
+                        className="overflow-hidden"
                       >
-                        {f.answer}
-                      </motion.h4>
+                        <h4 className="font-manrope-regular text-[14px] md:text-[16px] xl:text-[18px] text-[#404040]">
+                          {f.answer}
+                        </h4>
+                      </motion.div>
                     )}
                   </AnimatePresence>
                 </div>

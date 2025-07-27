@@ -135,8 +135,8 @@ export default function PersonalMoment() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.path
-          initial={{ pathLength: 0 }}
-          whileInView={{ pathLength: 1 }}
+          initial={{ pathLength: 0, opacity: 0 }}
+          whileInView={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.35, ease: easeInOut, delay: 0.9 }}
           d="M13.2561 704C-9.47363 646 -9.19203 539.615 173.773 578.075C356.737 616.536 98.342 430.374 286.013 386.822C473.685 343.269 -5.06248 378.868 194.036 261.844C393.134 144.819 436.875 39.1877 433.857 1"
           stroke="#86C0FA"

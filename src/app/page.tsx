@@ -1,4 +1,5 @@
 import Faq from "./landing/faq";
+import Footer from "./landing/footer";
 import HeroSection from "./landing/hero-section";
 import PersonalMoment from "./landing/personal-moment";
 import Pricing from "./landing/pricing";
@@ -21,6 +22,9 @@ export default function Home() {
       </section>
       <section className="container mx-auto px-2 py-8 xl:py-24 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-24">
         <Faq />
+      </section>
+      <section className="container mx-auto px-2 py-8 xl:py-24 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-24">
+        <Footer />
       </section>
     </>
   );
